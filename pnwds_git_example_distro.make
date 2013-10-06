@@ -1,0 +1,18 @@
+api = 2
+core = 7.x
+
+projects[drupal][type] = core
+projects[drupal][version] = "7.23"
+
+; Buildkit includes
+
+; Use vocabulary machine name for permissions
+; http://drupal.org/node/995156
+projects[drupal][patch][995156] = http://drupal.org/files/995156-46_portable_taxonomy_permissions-D7.patch
+
+; End of Buildkit includes
+
+; PNWDS Behat Example Profile
+projects[pnwds_git_example][type] = profile
+projects[pnwds_git_example][download][type] = git
+projects[pnwds_git_example][download][url] = http://github.com/affinitybridge/pnwds_git_example.git
